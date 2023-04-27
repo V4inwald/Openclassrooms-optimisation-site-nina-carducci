@@ -6,6 +6,11 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+:root {
+	--better-contrast-gold-color: #595921;
+  }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -103,7 +108,7 @@ body {
 }
 .nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: var(--better-contrast-gold-color);
 	border-radius:0;
 }
 .nav-pills .nav-link {
@@ -206,7 +211,7 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #BEB45A;
+	background-color: var(--better-contrast-gold-color);
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -243,7 +248,9 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #BEB45A;
+	background-color: var(--better-contrast-gold-color);
+	color: #FFFFFF;
+	border-color: #000000;
 	padding: .5em 1em
 }
 
